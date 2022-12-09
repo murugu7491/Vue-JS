@@ -1,0 +1,54 @@
+.todo_list {
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+.section_padding {
+    padding: 60px 0;
+}
+.content_inner {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background-color: #8080808f;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+.content_in .col {
+    padding: 0 10px;
+}
+.content_in .row {
+    margin: 0 -10px;
+}
+.com_input {
+    padding: 10px;
+    width: 100%;
+}
+.content_in {
+    padding-top: 30px;
+}
+.fullwd_btn {
+    width: 100%;
+    padding: 10px;
+}
+.todo_item {
+    font-size: 16px;
+}
+.rm_btn {
+    padding: 10px;
+    width: 90px;
+}
+.todo_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}

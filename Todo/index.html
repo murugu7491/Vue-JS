@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="assets/js/libs/vue.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container section_padding">
+        <div class="content_inner">
+          <h2 class="title">Todo</h2>
+          <div class="content_in">
+            <div class="row">
+              <div class="col col_70">
+                <input v-model="myTodo" class="com_input" />
+              </div>
+              <div class="col col_30">
+                <button @click="pushTodo" class="fullwd_btn">Add</button>
+              </div>
+            </div>
+            <ol class="todo_list">
+              <todo-item
+                v-for="(myTod,ind) of myTodos"
+                v-bind:todo="myTod"
+                @remove="myTodos.splice(ind, 1)"
+                v-bind:key="myTod.id"
+              ></todo-item>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
